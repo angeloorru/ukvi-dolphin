@@ -8,7 +8,7 @@ Python V3.10
 `source .env_name/bin/activate`
 
 #### 2. Run:
-Run below only if on AMD GPU
+Run the following command only if on AMD GPU
 `pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/rocm5.6`
 
 if not on AMD GPU run `pip install torch`. Details here: https://pytorch.org/get-started/locally/#linux-installation

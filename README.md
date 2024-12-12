@@ -61,7 +61,7 @@ trained with UKVI data.
 For this, you can use this command:  `python3 convert_hf_to_gguf.py   --outfile dolphin-llama.gguf   --outtype f16   ./base_model`
 
 
-*Note: Step 5 need to be done on the llama.cpp repo. Copy the merged_model and base_model into the repo to execute the 
+*Note: Step 5 needs to be done on the llama.cpp repo. Copy the merged_model and base_model into the repo to execute the 
 python scripts correctly.
 
 #### 6. To test the LoRA adapters you can run the inference_test_training.py script:

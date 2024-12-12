@@ -55,11 +55,11 @@ This is done in few steps:
 - Run this command to create a .gguf file with the base dolphin llama and the LoRA adapters with the UKVI data:
 `python3 convert_hf_to_gguf.py   --outfile llama-ukvi-model.gguf   --outtype f16   ./merged_model`
 
-Wait for the script to complete, and you should see the generated llama-ukvi-model.gguf file
+Wait for the script to complete, and you should see the generated llama-ukvi-model.gguf file at the root of your project.
 
 Import the new gguf file into LM Studio to test the dolphin-llama inference trained with UKVI data.
 
-You can generate also a gguf file with the base dolphin-llama model to compare it against the one 
+You can also generate a gguf file with the base dolphin-llama model to compare it against the one 
 trained with UKVI data. 
 
 For this, you can use this command:  `python3 convert_hf_to_gguf.py   --outfile dolphin-llama.gguf   --outtype f16   ./base_model`

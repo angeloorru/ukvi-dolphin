@@ -4,12 +4,16 @@ dolphin-llama LLM inference trained with UK Visa and Immigration data
 
 #### 1. Create a python virtual env:
 Python V3.10
+
 `python3 -m venv .env_name`
+
 `source .env_name/bin/activate`
 
 #### 2. Run:
 Run the following command only if on AMD GPU
+
 `pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/rocm5.6`
+
 
 if not on AMD GPU run `pip install torch`. Details here: https://pytorch.org/get-started/locally/#linux-installation
 
@@ -61,8 +65,8 @@ trained with UKVI data.
 For this, you can use this command:  `python3 convert_hf_to_gguf.py   --outfile dolphin-llama.gguf   --outtype f16   ./base_model`
 
 
-*Note: Step 5 needs to be done on the llama.cpp repo. Copy the merged_model and base_model into the repo to execute the 
-python scripts correctly.
+*Note: Step 5 needs to be done on the `llama.cpp repo`. Copy the `merged_model` and `base_model` into the repo to execute the 
+python scripts `convert_hf_to_gguf.py` correctly.
 
 #### 6. To test the LoRA adapters you can run the inference_test_training.py script:
 `python trained_inference_test.py`
